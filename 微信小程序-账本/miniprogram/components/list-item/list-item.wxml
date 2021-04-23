@@ -1,0 +1,6 @@
+<view class="list-item" bindtap="clickListItem">
+  <view class="list-item-title">{{title}}</view>
+  <view class="list-item-icon">
+    <image class="auto-img" src="../../images/right-arrow.png" mode="widthFix"></image>
+  </view>
+</view>

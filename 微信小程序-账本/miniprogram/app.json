@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/booking/booking",
+    "pages/chart/chart",
+    "pages/my/my",
+    "components/booking-item/booking-item",
+    "components/list-item/list-item",
+    "pages/myBooking/myBooking",
+    "components/type-data/type-data",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "狐狸账本",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "selectedColor": "#21A4f1",
+    "color": "#6d6d6d",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "selectedIconPath": "images/home1.png",
+        "iconPath": "images/home.png"
+      },
+      {
+        "pagePath": "pages/booking/booking",
+        "text": "账本",
+        "selectedIconPath": "images/jizhang1.png",
+        "iconPath": "images/jizhang.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "图表",
+        "selectedIconPath": "images/tubiao1.png",
+        "iconPath": "images/tubiao.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人",
+        "selectedIconPath": "images/mylei1.png",
+        "iconPath": "images/mylei.png"
+      }
+    ]
+  }
+}

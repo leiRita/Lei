@@ -1,0 +1,74 @@
+<!--miniprogram/pages/booking/booking.wxml-->
+<import src="booking.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="booking" wx:else>
+  <view class="booking-bg"></view>
+  <view class="booking-box">
+    <view class="booking-type">
+
+      <view class="booking-title">
+        <view class="booking-item {{index == datatype? 'active':''}}" wx:for="{{bookingtype}}" wx:key="index" data-index="{{index}}" data-key="datatype" bindtap="toggleBookingType">{{item.title}}</view>
+      </view>
+
+      <!-- 轮播图 -->
+      <view class="booking-icon">
+        
+        <swiper class="swiper-box" indicator-dots="{{true}}" indicator-active-color="#FEDB5B" circular="{{true}}">
+          <swiper-item wx:for="{{subTypes}}" wx:key="index">
+            <view class="swiper-box-item">
+
+              <view class="swiper-icon {{v.isAction ? 'active' : ''}}" wx:for="{{item}}" wx:for-item="v" wx:for-index="i" wx:key="i" data-page="{{index}}" data-index="{{i}}" bindtap="toggleSubtype">
+
+                <view class="swiper-icon-box">
+                  <image class="auto-img" src="{{v.icons}}" mode="widthFix"></image>
+                </view>
+
+                <view class="swiper-icon-text">{{v.name}}</view>
+
+              </view>
+
+            </view>
+          </swiper-item>
+
+        </swiper>
+      </view>
+    </view>
+
+    <view class="booking-account">
+      <view class="booking-account-title">账户选择</view>
+      <view class="booking-account-item">
+        <view class="booking-account-items {{index == activeAccountIndex ? 'active' + index : ''}}" wx:for="{{accounts}}" wx:key="index" data-index="{{index}}" data-key="activeAccountIndex" bindtap="toggleBookingType">{{item.name}}</view>
+      </view>
+    </view>
+
+    <view class="booking-content">
+      <view class="booking-content-item">
+        <view class="b-title">日期</view>
+        <view class="c-content">
+          <picker class="picker-box" mode="date" data-key="date" bindchange="setValue" start="2000-01-01" end="{{currentDate}}">{{date}}</picker>
+        </view>
+      </view>
+
+      <view class="booking-content-item">
+        <view class="b-title">金额</view>
+        <view class="c-content">
+          <input class="ipt-number" type="digit" placeholder-class="ipt-number" data-key="money" bindchange="setValue" value="{{money}}" placeholder="填写金额"/>
+        </view>
+      </view>
+
+      <view class="booking-content-item textarea">
+        <view class="b-title">备注</view>
+        <view class="c-content textarea-c">
+          <textarea class="t" placeholder-class="area" data-key="comment" bindinput="setValue" placeholder="填写备注" maxlength="{{50}}" value="{{comment}}" />
+        </view>
+      </view>
+    </view>
+
+    <view class="btn-save">
+      <view class="save" bindtap="save">保存</view>
+      <button wx:if="{{!isAuth}}" open-type="getUserInfo" bindgetuserinfo="getuserAuthInfo">授权</button>
+    </view>
+    
+    
+  </view>
+</view>

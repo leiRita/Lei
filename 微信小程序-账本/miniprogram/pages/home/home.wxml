@@ -1,0 +1,54 @@
+<!--miniprogram/pages/home/home.wxml-->
+<import src="home.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="home" wx:else>
+	<view class="home-bg">
+		<view class="jieyu-box">
+			<view class="jieyu">
+				<view class="jieyu-title">本月结余</view>
+				<view class="jieyu-money">{{currentMonthBooking.jy}}.<text class="sub-decimal">{{currentMonthBooking.jyDecimal}}</text></view>
+			</view>
+		</view>
+
+		<view class="fen">
+			<view class="it-ites">
+				<view class="it-ites-yue">
+					<view class="jieyu-title">本月收入</view>
+					<view class="money">+{{currentMonthBooking.sr}}.<text class="sub-decimal">{{currentMonthBooking.srDecimal}}</text></view>
+				</view>
+			</view>
+			<view class="it-ites">
+				<view class="it-ites-yue">
+					<view class="jieyu-title">本月支出</view>
+					<view class="money">-{{currentMonthBooking.zc}}.<text class="sub-decimal">{{currentMonthBooking.zcDecimal}}</text></view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="yue-zhic">
+
+		<view class="yue-zhic-box">
+			<view class="yue-content">
+				<view class="yue-nav">{{date}}</view>
+				<view class="b1 sr">收入：{{currentDateMoney.sr}}</view>
+				<view class="b1 zc">支出：{{currentDateMoney.zc}}</view>
+			</view>
+			<view class="set-cont">
+				<view class="pont"></view>
+				<view class="pont"></view>
+				<view class="pont"></view>
+				<picker class="picker-box" mode="date" start="{{pickerDate.start}}" end="{{pickerDate.end}}" bindchange="toggleCurrentDate">选择</picker>
+			</view>
+		</view>
+
+	</view>
+
+	<view>
+		<booking-item wx:for="{{currentDateBooking}}" wx:key='index' booking-data="{{item}}" ></booking-item>
+
+		<view class="not-booking" hidden="{{currentDateBooking.length > 0}}">{{currentDate}} 没有任何记账记录哦！</view>
+	</view>
+
+	
+</view>

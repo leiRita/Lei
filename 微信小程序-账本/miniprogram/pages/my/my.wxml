@@ -1,0 +1,28 @@
+<!--miniprogram/pages/my/my.wxml-->
+<import src="my.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="my" wx:else>
+
+  <view class="user-bg">
+    <view class="user-info" wx:if="{{isAuth}}">
+      <view class="avatar">
+        <image class="avatar-img" src="{{userInfoData.avatarUrl}}" mode="widthFix"></image>
+      </view>
+      <view class="nickname one-text">{{userInfoData.nickName}}</view>
+    </view>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="getuserAuthInfo">点击登录</button>
+  </view>
+
+  <view class="list">
+
+    <view class="my-list-item">
+      <list-item title="我的账本" bindclickListItem="viewMyBooking"></list-item>
+    </view>
+
+    <!-- <view class="my-list-item">
+      <list-item title="今日天气" bindclickListItem="viewWeather"></list-item>
+    </view> -->
+
+  </view>
+
+</view>

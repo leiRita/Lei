@@ -1,0 +1,200 @@
+/* miniprogram/pages/booking/booking.wxss */
+@import "./booking.skeleton.wxss";
+.booking .booking-bg{
+  height: 150rpx;
+  background-color: #1296db;
+}
+.booking  .booking-box{
+  position: relative;
+  top: -80rpx;
+  padding: 20rpx;
+}
+.booking-type{
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+}
+.booking-title{
+  width: 200rpx;
+  height: 50rpx;
+  border: 1rpx solid #1296db;
+  margin: 0 auto;
+  border-radius: 30rpx;
+  display: flex;
+  overflow: hidden;
+}
+.booking-item{
+  flex: 1;
+  font-size: 28rpx;
+  text-align: center;
+  height: 100%;
+  line-height: 50rpx;
+}
+.booking-item.active{
+  background-color: #1296db;
+}
+.booking-icon{
+  margin-top: 60rpx;
+}
+.swiper-box{
+  height: 330rpx;
+}
+.swiper-box-item{
+  display: flex;
+  flex-wrap: wrap;
+}
+.swiper-icon{
+  width: 20%;
+  margin-bottom: 20rpx;
+}
+.auto-img{
+  width: 100%;
+  height: 100%;
+}
+.swiper-icon-box{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #ddd;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform .2s ease-in-out;
+}
+.swiper-icon-text{
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+  transition: color .2s ease-in-out;
+}
+.swiper-icon.active .swiper-icon-text{
+  color: #1296db;
+}
+.booking-account{
+  margin-top: 20rpx;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+.booking-account-title{
+  font-size: 28rpx;
+  padding-bottom: 20rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+.booking-account-item{
+  display: flex;
+}
+.booking-account-items{
+  flex: 1;
+  font-size: 24rpx;
+  text-align: center;
+  background-color: #ddd;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 25rpx;
+  margin-right: 20rpx;
+}
+.booking-account-items:last-child{
+  margin-right: 0;
+}
+.booking-account-items.active0{
+  background-color: rgb(253, 68, 68);
+  color: #fff;
+}
+.booking-account-items.active1{
+  background-color: rgb(46, 156, 247);
+  color: #fff;
+}
+.booking-account-items.active2{
+  background-color: rgb(32, 236, 138);
+  color: #fff;
+}
+.booking-account-items.active3{
+  background-color: rgb(250, 198, 43);
+  color: #fff;
+}
+.booking-account-items.active4{
+  background-color: rgb(94, 70, 230);
+  color: #fff;
+}
+
+.booking-content{
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 20rpx;
+}
+.booking-content-item{
+  display: flex;
+}
+.b-title{
+  height: 80rpx;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  width: 100rpx;
+}
+.c-content{
+  width: calc(100% - 80rpx);
+  height: 80rpx;
+}
+.picker-box,.ipt-number{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.area{
+  font-size: 28rpx;
+  color: #666;
+}
+.textarea{
+  height: 160rpx;
+}
+.t{
+  width: 100%;
+  height: 100%;
+  font-size: 28rpx;
+  color: #666;
+}
+.textarea-c{
+  height: 115rpx;
+  padding-top: 25rpx;
+  padding-right: 20rpx;
+}
+.btn-save{
+  margin-top: 60rpx;
+  position: relative;
+}
+.save{
+  height: 80rpx;
+  background-color: #1296db;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  border-radius: 40rpx;
+}
+.save:active{
+  background-color: #1296db;
+}
+.save{
+  margin-top: 60rpx;
+  height: 80rpx;
+  background-color: #1296db;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  border-radius: 40rpx;
+}
+
+.save:active{
+  background-color: #1282be;
+}
+
+button:not([size='mini']){
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+}

@@ -1,0 +1,100 @@
+/* miniprogram/pages/home/home.wxss */
+@import "./home.skeleton.wxss";
+.home .home-bg{
+  height: 400rpx;
+  background-color: #1296db;
+}
+.home .home-bg .jieyu-box{
+  position: relative;
+  height: 160rpx;
+  padding-bottom: 40rpx;
+}
+.home .jieyu{
+  position: absolute;
+  left: 50%;
+  top: 40rpx;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.home .jieyu-title{
+  color: white;
+  font-size: 28rpx;
+}
+.home .jieyu-money{
+  font-weight: bold;
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  color: white;
+}
+.home .sub-decimal{
+  font-size: 27rpx;
+}
+
+.home .home-bg .fen{
+  display: flex;
+}
+.home .home-bg .fen .it-ites{
+  flex: 1;
+  display: flex;
+  height: 200rpx;
+  align-items: center;
+}
+.home .home-bg .fen .it-ites .it-ites-yue{
+  flex: 1;
+  text-align: center;
+}
+.home .home-bg .fen .it-ites .money{
+  color: white;
+  margin-top: 20rpx;
+  font-weight: bold;	
+}
+
+.home .yue-zhic{
+  background-color: #fff;
+}
+.home .yue-zhic-box{
+  display: flex;
+  padding: 0 20rpx;
+}
+.home .yue-content{
+  margin-right: auto;
+  height: 80rpx;
+  display: flex;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.home .b1{
+  margin-left: 20rpx;
+}
+.home .set-cont{
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.home .picker-box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+.home .pont{
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background-color: #979696;
+  margin: 0 4rpx;
+}
+.not-booking{
+  text-align: center;
+  margin-top: 100rpx;
+  font-size: 30rpx;
+  color: #b1b1b1;
+}
+.zc{
+  color: #fa2424;
+}
+.sr{
+  color: #36b902;
+}

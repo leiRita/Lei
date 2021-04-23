@@ -1,0 +1,20 @@
+<view class="type-data" bindtap="click" data-_ids="{{booking._ids}}">
+  <view class="type-data-icon">
+    <image class="auto-img" src="{{booking.icon}}" mode="widthFix"></image>
+  </view>
+  <view class="type-data-item">
+    <view class="t1">
+      <view class="t1-title">{{booking.title}}</view>
+      <view class="t1-money sr">{{booking.value}}</view>
+    </view>
+    <view class="b1">
+      <view class="progress-box">
+        <view class="progress-active" style="background-color: {{booking.color}}; width: {{booking.value / total * 100 + '%'}};"></view>
+      </view>
+      <view class="counts">{{booking.count}}笔</view>
+    </view>
+  </view>
+  <view class="type-data-arrow">
+    <image class="auto-img" src="../../images/right-arrow.png" mode="widthFix"></image>
+  </view>
+</view>

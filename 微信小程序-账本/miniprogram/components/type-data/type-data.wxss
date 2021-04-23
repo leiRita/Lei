@@ -1,0 +1,76 @@
+.type-data{
+  height: 80rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.type-data-icon{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #ddd;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+
+.type-data-item{
+  width: calc(100% - 160rpx);
+  height: 80rpx;
+}
+
+.type-data-arrow{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+
+.t1{
+  display: flex;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.t1-title{
+  margin-right: auto;
+}
+
+.sr{
+  color: #D13B2E;
+} 
+
+.zc{
+ color: #249D62;
+}
+
+.b1{
+  display: flex;
+  align-items: center;
+}
+
+.progress-box{
+  width: 440rpx;
+  height: 24rpx;
+  background-color: #e8e8e8;
+  margin-right: auto;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+
+.progress-active{
+  width: 0;
+  height: 100%;
+  transition: width .3s linear, background-color .3s linear;
+}
+
+.counts{
+  color: #999;
+  font-size: 24rpx;
+}
+
+.auto-img{
+  display: block;
+  width: 100%;
+}

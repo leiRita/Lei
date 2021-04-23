@@ -1,0 +1,9 @@
+<!--miniprogram/pages/myBooking/myBooking.wxml-->
+<import src="myBooking.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view wx:else>
+  <view wx:if="{{bookingData.length > 0}}">
+    <booking-item is-delete="{{true}}" wx:for="{{bookingData}}" wx:key="index" booking-data="{{item}}" bindremove="removeBooking" data-index="{{index}}"></booking-item>
+  </view>
+  <view class="not-booking" wx:else>没有任何记账数据</view>
+</view>

@@ -1,0 +1,25 @@
+<!--miniprogram/components/booking-item/booking-item.wxml-->
+<view class="booking-item">
+  <view class="booking-item-icon">
+    <image class="auto-img" mode="widthFix" src="{{bookingData.subtypes.icons}}" alt=""></image>
+  </view>
+
+  <view class="booking-item-info">
+
+    <view class="info-box">
+      <view class="info-box-content">
+        <view class="title">{{bookingData.subtypes.name}}</view>
+        <view class="account {{bookingData.account.type}}">{{bookingData.account.name}}</view>
+        <view class="date">{{bookingData.date}}</view>
+      </view>
+      <view class="comment">{{bookingData.comment}}</view>
+    </view>
+
+    <view class="booking-item-right">
+      <view class="booking-itm-price {{bookingData.mintype.type}}">{{bookingData.money}}</view>
+      <view class="delete" wx:if="{{isDelete}}" data-_id="{{bookingData._id}}" bindtap="removeCurrentBooking">
+        <image class="auto-img dest" mode="widthFix" src="../../images/delete.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

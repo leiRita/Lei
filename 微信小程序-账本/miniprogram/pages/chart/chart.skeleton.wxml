@@ -1,0 +1,96 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/10 下午7:19:09
+使用方法：
+在 E:\记账\miniprogram\pages\chart\chart.wxml 引入模板
+
+```
+<import src="chart.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 E:\记账\miniprogram\pages\chart\chart.wxss 中引入样式
+```
+@import "./chart.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="chart">
+      <view class="chart-nav">
+        <view class="select-data">
+          <view end="2021-03-10" mode="date" start="2000-01-01" class="sk-transparent sk-text-28-0000-495 sk-text sk-image">2021年</view>
+        </view>
+        <view class="date-type sk-transparent sk-text-30-0000-375 sk-text" style="background-position-x: 50%;">按年查询</view>
+      </view>
+      <view>
+        <view class="type-nav">
+          <view class="type-nav-item">
+            <view class="type-nav-titleactive-sr" data-index="0">
+              <view class="sk-transparent sk-text-14-2857-814 sk-text">年收入</view>
+              <view class="sk-transparent sk-text-14-2857-605 sk-text">￥1120</view>
+            </view>
+          </view>
+          <view class="type-nav-item">
+            <view class="type-nav-title" data-index="1">
+              <view class="sk-transparent sk-text-14-2857-372 sk-text" style="background-position-x: 50%;">年支出</view>
+              <view class="sk-transparent sk-text-14-2857-976 sk-text" style="background-position-x: 50%;">￥66785</view>
+            </view>
+          </view>
+        </view>
+        <view class="pie-box">
+          <view is="components/ec-canvas/ec-canvas" id="mychart-dom-pie">
+            <view bindtouchend="touchEnd" bindtouchmove="touchMove" bindtouchstart="touchStart" canvas-id="mychart-pie" class="canvas--ec-canvas sk-transparent sk-text-14-2857-32 sk-text sk-image" type="2d">绘图区域</view>
+          </view>
+        </view>
+        <view class="type-date">
+          <view is="components/type-data/type-data">
+            <view class="data--type-data" data-_ids=",">
+              <view class="data--type-data-icon">
+                <image class="data--auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+              </view>
+              <view class="data--type-data-item">
+                <view class="data--t1">
+                  <view class="data--t1-title sk-transparent sk-text-14-2857-635 sk-text">交通 NaN%</view>
+                  <view class="data--t1-money data--sr sk-transparent sk-opacity">34</view>
+                </view>
+                <view class="data--b1">
+                  <view class="data--progress-box">
+                    <view class="data--progress-active" style="background-color: rgb(26,137,166); width: 3.0357142857142856%;"></view>
+                  </view>
+                  <view class="data--counts sk-transparent sk-text-14-2857-493 sk-text">2笔</view>
+                </view>
+              </view>
+              <view class="data--type-data-arrow">
+                <image class="data--auto-img sk-image" mode="widthFix" style="height: 17px;"></image>
+              </view>
+            </view>
+          </view>
+          <view is="components/type-data/type-data">
+            <view class="data--type-data" data-_ids="true">
+              <view class="data--type-data-icon">
+                <image class="data--auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+              </view>
+              <view class="data--type-data-item">
+                <view class="data--t1">
+                  <view class="data--t1-title sk-transparent sk-text-14-2857-249 sk-text">人情 NaN%</view>
+                  <view class="data--t1-money data--sr sk-transparent sk-text-14-2857-242 sk-text">998</view>
+                </view>
+                <view class="data--b1">
+                  <view class="data--progress-box">
+                    <view class="data--progress-active" style="background-color: rgb(110,240,236); width: 89.10714285714286%;"></view>
+                  </view>
+                  <view class="data--counts sk-transparent sk-text-14-2857-884 sk-text">1笔</view>
+                </view>
+              </view>
+              <view class="data--type-data-arrow">
+                <image class="data--auto-img sk-image" mode="widthFix" style="height: 17px;"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

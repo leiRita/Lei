@@ -1,0 +1,146 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/3 上午11:20:25
+使用方法：
+在 E:\记账\miniprogram\pages\home\home.wxml 引入模板
+
+```
+<import src="home.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 E:\记账\miniprogram\pages\home\home.wxss 中引入样式
+```
+@import "./home.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="home">
+      <view class="home-bg">
+        <view class="jieyu-box">
+          <view class="jieyu">
+            <view class="jieyu-title sk-transparent sk-text-14-2857-327 sk-text" style="background-position-x: 50%;">本月结余</view>
+            <view class="jieyu-money sk-transparent">1,212,888.
+              <text class="sub-decimal sk-transparent sk-text-14-2857-952 sk-text" style="background-position-x: 50%;">09</text>
+            </view>
+          </view>
+        </view>
+        <view class="fen">
+          <view class="it-ites">
+            <view class="it-ites-yue">
+              <view class="jieyu-title sk-transparent sk-text-14-2857-675 sk-text" style="background-position-x: 50%;">本月收入</view>
+              <view class="money sk-transparent">1,212,112.
+                <text class="sub-decimal sk-transparent sk-text-14-2857-482 sk-text" style="background-position-x: 50%;">09</text>
+              </view>
+            </view>
+          </view>
+          <view class="it-ites">
+            <view class="it-ites-yue">
+              <view class="jieyu-title sk-transparent sk-text-14-2857-72 sk-text" style="background-position-x: 50%;">本月支出</view>
+              <view class="money sk-transparent">1,212,112.
+                <text class="sub-decimal sk-transparent sk-text-14-2857-593 sk-text" style="background-position-x: 50%;">09</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="yue-zhic">
+        <view class="yue-zhic-box">
+          <view class="yue-content">
+            <view class="yue-nav sk-transparent sk-text-35-0000-532 sk-text">1月10日</view>
+            <view class="b1 sk-transparent sk-text-35-0000-202 sk-text">支出:1,2999.07</view>
+            <view class="b1 sk-transparent sk-text-35-0000-93 sk-text">收入:9,2999.07</view>
+          </view>
+          <view class="set-cont">
+            <view class="pont"></view>
+            <view class="pont"></view>
+            <view class="pont"></view>
+            <view class="picker-box sk-transparent sk-text-14-2857-986 sk-text sk-image" end="2021-03-10" mode="date" start="2021-03-01">选择</view>
+          </view>
+        </view>
+      </view>
+      <view is="components/booking-item/booking-item">
+        <view class="item--booking-item">
+          <view class="item--booking-item-icon">
+            <image class="item--auto-img sk-image" mode="widthFix" style="height: 40px;"></image>
+          </view>
+          <view class="item--booking-item-info">
+            <view class="item--info-box">
+              <view class="item--info-box-content">
+                <view class="item--title sk-transparent sk-text-14-2857-181 sk-text">餐饮</view>
+                <view class="item--account sk-transparent sk-text-23-6842-562 sk-text">微信支付</view>
+                <view class="item--date sk-transparent sk-text-23-6842-696 sk-text">2020-12-12</view>
+              </view>
+              <view class="item--comment sk-transparent sk-text-14-2857-932 sk-text">备注信息</view>
+            </view>
+            <view class="item--booking-item-right">
+              <view class="item--booking-itm-price sk-transparent sk-text-14-2857-531 sk-text">￥120.36</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view is="components/booking-item/booking-item">
+        <view class="item--booking-item">
+          <view class="item--booking-item-icon">
+            <image class="item--auto-img sk-image" mode="widthFix" style="height: 40px;"></image>
+          </view>
+          <view class="item--booking-item-info">
+            <view class="item--info-box">
+              <view class="item--info-box-content">
+                <view class="item--title sk-transparent sk-text-14-2857-700 sk-text">餐饮</view>
+                <view class="item--account sk-transparent sk-text-23-6842-939 sk-text">微信支付</view>
+                <view class="item--date sk-transparent sk-text-23-6842-545 sk-text">2020-12-12</view>
+              </view>
+              <view class="item--comment sk-transparent sk-text-14-2857-516 sk-text">备注信息</view>
+            </view>
+            <view class="item--booking-item-right">
+              <view class="item--booking-itm-price sk-transparent sk-text-14-2857-970 sk-text">￥120.36</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view is="components/booking-item/booking-item">
+        <view class="item--booking-item">
+          <view class="item--booking-item-icon">
+            <image class="item--auto-img sk-image" mode="widthFix" style="height: 40px;"></image>
+          </view>
+          <view class="item--booking-item-info">
+            <view class="item--info-box">
+              <view class="item--info-box-content">
+                <view class="item--title sk-transparent sk-text-14-2857-322 sk-text">餐饮</view>
+                <view class="item--account sk-transparent sk-text-23-6842-141 sk-text">微信支付</view>
+                <view class="item--date sk-transparent sk-text-23-6842-782 sk-text">2020-12-12</view>
+              </view>
+              <view class="item--comment sk-transparent sk-text-14-2857-550 sk-text">备注信息</view>
+            </view>
+            <view class="item--booking-item-right">
+              <view class="item--booking-itm-price sk-transparent sk-text-14-2857-717 sk-text">￥120.36</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view is="components/booking-item/booking-item">
+        <view class="item--booking-item">
+          <view class="item--booking-item-icon">
+            <image class="item--auto-img sk-image" mode="widthFix" style="height: 40px;"></image>
+          </view>
+          <view class="item--booking-item-info">
+            <view class="item--info-box">
+              <view class="item--info-box-content">
+                <view class="item--title sk-transparent sk-text-14-2857-276 sk-text">餐饮</view>
+                <view class="item--account sk-transparent sk-text-23-6842-890 sk-text">微信支付</view>
+                <view class="item--date sk-transparent sk-text-23-6842-253 sk-text">2020-12-12</view>
+              </view>
+              <view class="item--comment sk-transparent sk-text-14-2857-876 sk-text">备注信息</view>
+            </view>
+            <view class="item--booking-item-right">
+              <view class="item--booking-itm-price sk-transparent sk-text-14-2857-28 sk-text">￥120.36</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

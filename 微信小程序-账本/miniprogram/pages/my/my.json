@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "个人",
+  "usingComponents":{
+    "list-item":"../../components/list-item/list-item"
+  }
+}

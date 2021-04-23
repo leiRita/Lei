@@ -1,0 +1,125 @@
+/* miniprogram/components/booking-item/booking-item.wxss */
+.booking-item{
+  height: 80rpx;
+  background-color: #fff;
+  display: flex;
+  padding: 10rpx 20rpx;
+  margin-bottom: 10rpx;
+}
+.booking-item-icon{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-color: #ddd;
+  overflow: hidden;
+}
+.auto-img{
+  width: 100%;
+  display: block;
+}
+.booking-item-info{
+  width: calc(100% - 100rpx);
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+}
+
+.info-box{
+  margin-right: auto;
+}
+
+.booking-itm-price{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #e4393c;
+}
+
+.booking-itm-price.sr{
+  color: #36b902;
+}
+.booking-itm-price.sr::before{
+  content: '+';
+  
+}
+
+.booking-itm-price.zc{
+  color: #fa2424;
+}
+.booking-itm-price.zc::before{
+  content: '-';
+  font-weight: bold;
+}
+
+.booking-item-right{
+  display: flex;
+}
+
+.delete{
+  width: 40rpx;
+  height: 40rpx;
+  background-color: #ddd;
+  margin-left: 20rpx;
+}
+
+.comment{
+  font-size: 22rpx;
+  color: #999;
+}
+
+.info-box-content{
+  display: flex;
+}
+
+.title{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.account,.date{
+  font-size: 20rpx;
+  margin-left: 20rpx;
+  line-height: 38rpx;
+}
+
+.date{
+  color: #999;
+}
+
+.account{
+  background-color: rgba(8,179,122, .45);
+  color: #444;
+  padding: 0 5rpx;
+}
+.delete{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+.dest{
+  height: 40rpx;
+}
+
+.account.xj{
+  background-color: rgb(253, 68, 68);
+  color: #fff;
+}
+
+.account.zfb{
+  background-color: rgb(46, 156, 247);
+  color: #fff;
+}
+
+.account.wx{
+  background-color: rgb(32, 236, 138);
+  color: #fff;
+}
+
+.account.xyk{
+  background-color: rgb(250, 198, 43);
+  color: #fff;
+}
+
+.account.cxk{
+  background-color: rgb(94, 70, 230);
+  color: #fff;
+}

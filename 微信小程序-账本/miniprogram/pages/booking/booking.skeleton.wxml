@@ -1,0 +1,130 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/11 下午8:22:57
+使用方法：
+在 E:\记账\miniprogram\pages\booking\booking.wxml 引入模板
+
+```
+<import src="booking.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 E:\记账\miniprogram\pages\booking\booking.wxss 中引入样式
+```
+@import "./booking.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="booking">
+      <view class="booking-bg"></view>
+      <view class="booking-box">
+        <view class="booking-type">
+          <view class="booking-title" style="border: none;">
+            <view class="booking-item active sk-transparent sk-text-23-8095-202 sk-text" data-index="0" data-key="datatype" style="background-position-x: 50%;">收入</view>
+            <view class="booking-item sk-transparent sk-text-23-8095-627 sk-text" data-index="1" data-key="datatype" style="background-position-x: 50%;">支出</view>
+          </view>
+          <view class="booking-icon">
+            <swiper circular="true" class="swiper-box" indicator-active-color="#FEDB5B" indicator-dots="true" current="0" autoplay="false">
+              <swiper-item style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+                <view class="swiper-box-item">
+                  <view class="swiper-icon" data-index="0" data-page="0">
+                    <view class="swiper-icon-box">
+                      <image class="auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+                    </view>
+                    <view class="swiper-icon-text sk-transparent sk-text-14-2857-626 sk-text" style="background-position-x: 50%;">餐饮</view>
+                  </view>
+                  <view class="swiper-icon" data-index="1" data-page="0">
+                    <view class="swiper-icon-box">
+                      <image class="auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+                    </view>
+                    <view class="swiper-icon-text sk-transparent sk-text-14-2857-940 sk-text" style="background-position-x: 50%;">购物</view>
+                  </view>
+                  <view class="swiper-icon" data-index="2" data-page="0">
+                    <view class="swiper-icon-box">
+                      <image class="auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+                    </view>
+                    <view class="swiper-icon-text sk-transparent sk-text-14-2857-55 sk-text" style="background-position-x: 50%;">出行</view>
+                  </view>
+                  <view class="swiper-icon" data-index="3" data-page="0">
+                    <view class="swiper-icon-box">
+                      <image class="auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+                    </view>
+                    <view class="swiper-icon-text sk-transparent sk-text-14-2857-19 sk-text" style="background-position-x: 50%;">健康</view>
+                  </view>
+                  <view class="swiper-icon" data-index="4" data-page="0">
+                    <view class="swiper-icon-box">
+                      <image class="auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+                    </view>
+                    <view class="swiper-icon-text sk-transparent sk-text-14-2857-627 sk-text" style="background-position-x: 50%;">娱乐</view>
+                  </view>
+                  <view class="swiper-icon" data-index="5" data-page="0">
+                    <view class="swiper-icon-box">
+                      <image class="auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+                    </view>
+                    <view class="swiper-icon-text sk-transparent sk-text-14-2857-798 sk-text" style="background-position-x: 50%;">住房</view>
+                  </view>
+                  <view class="swiper-icon" data-index="6" data-page="0">
+                    <view class="swiper-icon-box">
+                      <image class="auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+                    </view>
+                    <view class="swiper-icon-text sk-transparent sk-text-14-2857-158 sk-text" style="background-position-x: 50%;">交通</view>
+                  </view>
+                  <view class="swiper-icon" data-index="7" data-page="0">
+                    <view class="swiper-icon-box">
+                      <image class="auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+                    </view>
+                    <view class="swiper-icon-text sk-transparent sk-text-14-2857-723 sk-text" style="background-position-x: 50%;">人情</view>
+                  </view>
+                  <view class="swiper-icon" data-index="8" data-page="0">
+                    <view class="swiper-icon-box">
+                      <image class="auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+                    </view>
+                    <view class="swiper-icon-text sk-transparent sk-text-14-2857-841 sk-text" style="background-position-x: 50%;">学习</view>
+                  </view>
+                  <view class="swiper-icon" data-index="9" data-page="0">
+                    <view class="swiper-icon-box">
+                      <image class="auto-img sk-image" mode="widthFix" style="height: 34px;"></image>
+                    </view>
+                    <view class="swiper-icon-text sk-transparent sk-text-14-2857-655 sk-text" style="background-position-x: 50%;">其它</view>
+                  </view>
+                </view>
+              </swiper-item>
+            </swiper>
+          </view>
+        </view>
+        <view class="booking-account">
+          <view class="booking-account-title sk-transparent sk-text-14-2857-324 sk-text" style="border: none;">账户选择</view>
+          <view class="booking-account-item">
+            <view class="booking-account-items sk-transparent sk-text-26-1905-1000 sk-text" data-index="0" data-key="activeAccountIndex" style="background-position-x: 50%;">现金</view>
+            <view class="booking-account-items sk-transparent sk-text-26-1905-540 sk-text" data-index="1" data-key="activeAccountIndex" style="background-position-x: 50%;">支付宝</view>
+            <view class="booking-account-items sk-transparent sk-text-26-1905-847 sk-text" data-index="2" data-key="activeAccountIndex" style="background-position-x: 50%;">微信</view>
+            <view class="booking-account-items sk-transparent sk-text-26-1905-101 sk-text" data-index="3" data-key="activeAccountIndex" style="background-position-x: 50%;">信用卡</view>
+            <view class="booking-account-items sk-transparent sk-text-26-1905-187 sk-text" data-index="4" data-key="activeAccountIndex" style="background-position-x: 50%;">储蓄卡</view>
+          </view>
+        </view>
+        <view class="booking-content">
+          <view class="booking-content-item">
+            <view class="b-title sk-transparent sk-text-33-8235-194 sk-text">日期</view>
+            <view class="c-content">
+              <view class="picker-box sk-transparent sk-text-33-8235-261 sk-text sk-image" data-key="date" end="2021-03-11" mode="date" start="2000-01-01">选择日期</view>
+            </view>
+          </view>
+          <view class="booking-content-item">
+            <view class="b-title sk-transparent sk-text-33-8235-282 sk-text">金额</view>
+            <view class="c-content">
+              <view class="ipt-number sk-image" data-key="money" placeholder="填写金额" placeholder-class="ipt-number" type="digit" value="true"></view>
+            </view>
+          </view>
+          <view class="booking-content-item textarea">
+            <view class="b-title sk-transparent sk-text-33-8235-699 sk-text">备注</view>
+            <view class="c-content textarea-c">
+              <view class="t sk-image" data-key="comment" maxlength="50" placeholder="填写备注" placeholder-class="area" value="true"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
